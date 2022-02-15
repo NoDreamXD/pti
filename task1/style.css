@@ -1,0 +1,26 @@
+p{
+	font-size: 20pt;
+	font-family: Roboto;
+	color: blue
+}
+.new{
+    color: green;
+}
+#style{
+    color: blue;
+    font-size: 20pt;
+}
+.t {
+    width: 50%;
+    background-color: black;
+}
+
+.employee {
+    border-collapse: collapse;
+    margin: 50px;
+}
+
+.employee th, .employee td {
+    border: 1px solid black;
+    padding: 8px 16px;
+}
