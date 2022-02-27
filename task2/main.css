@@ -1,55 +1,80 @@
-img{
-    /* width:24px;
-    height: 24px; */
-    border: 1px solid violet;
+img {
+  border: 1px solid violet;
 }
-table{
-    border-collapse: collapse;
-    margin: 50px;
+table {
+  border-collapse: collapse;
+  margin: 50px;
 }
 
-th, td {
-    font-family: 'Times New Roman', Times, serif;
-    border: 1px solid purple;
-    padding: 8px 16px;
-color: #800080;
+th,
+td {
+  font-family: "Times New Roman", Times, serif;
+  border: 1px solid purple;
+  padding: 8px 16px;
+  color: #800080;
 }
-div{
-    border: 1px solid purple;
-background-color: #ecd8e9;
- /* margin: 15px;  */
+div {
+  border-top: 1px solid purple;
+  border-bottom: 1px solid purple;
+  background-color: #ecd8e9;
+  padding: 15px;
 }
-li{
-    color: #973e95;
+li {
+  color: #973e95;
 }
-a{
-    color: purple;
+a {
+  color: purple;
 }
-a:hover{
-    color: #ad66a9;
+a:hover {
+  color: #ad66a9;
 }
-p{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 14pt;
-    color: #800080;
-
+p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14pt;
+  color: #800080;
 }
-h1{
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    color: #800080;
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  color: #800080;
 }
-h3{
-    font-family: 'Times New Roman', Times, serif;
-    text-align: right;
-    padding: 14px;
-    color: #800080;
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: right;
+  padding: 14px;
+  color: #800080;
 }
-/* ul{
+@media (min-width: 992px) {
+  .screen {
+    width: 1000px;
+    position: absolute;
+    left: 25%;
+  }
+  #screennews {
+    width: 1000px;
+    position: absolute;
+    left: 25%;
+  }
+  ul {
     position: fixed;
-    bottom: 15px;
-} */
-.screen{
-    /* width: 1920px; */
-    height: 1080px;
+    left: 15px;
+    bottom: 5px;
+  }
+}
+.screen {
+  background-color: #ecd8e9;
+  border: none;
+  height: 100%;
+}
+#screennews {
+  background-color: #ecd8e9;
+  border: none;
+}
+body {
+  margin: 0%;
+  background-color: #d8b1d4;
+}
+.author {
+  position: absolute;
+  bottom: 10px;
 }
