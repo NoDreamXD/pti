@@ -1,0 +1,49 @@
+h1{
+    text-align: center;
+    color: rgb(76, 112, 146);
+}
+.image{
+    position: relative;   
+}
+body{
+    background-color: rgb(181, 206, 228);
+    width: 1860px;
+    overflow: hidden;
+}
+#collage{
+    border: 1px solid #447792;
+    width: 820px;
+    height: 530px;
+    position: absolute;
+    top: 110px;
+    left: 56%;
+}
+#map{
+    width: 820px;
+}
+img{
+    box-shadow: 10px 10px 15px 8px #447792c4;
+}
+area{
+    cursor: pointer;
+}
+p{
+    color: rgb(76, 112, 146);
+    font-size: 16pt;
+}
+nav{
+    height: 30px;
+}
+a{
+    position: relative;
+    left: 38%;
+    font-size: 14pt;
+    color: rgb(76, 112, 146);
+}
+a:hover{
+    color: #134e6d;
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+}
