@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="rus">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Анкета</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <div>
+        <input type="text" placeholder="Введите фамилию">
+        <input type="text" placeholder="Введите имя">
+        <input type="text" placeholder="Введите логин">
+        <input type="password" placeholder="Введите пароль">
+      </div>
+      <div>
+        <p>Выберите предмет</p>
+        <select name="Выберите предмет" id="disciplines">
+          <option value="Программные технологие Интернет">
+            Программные технологии интернет
+          </option>
+          <option value="Проектирование информационных систем">
+            Проектирование информационных систем
+          </option>
+          <option value="Иностранный язык в профессиональной деятельности">
+            Иностранный язык в профессиональной деятельности
+          </option>
+          <option value="Компьютерные сети">Компьютерные сети</option>
+          <option value="Моделирование систем">Моделирование систем</option>
+          <option value="МКЦДИ">МКЦДИ</option>
+          <option value="ИТМСЗИ">ИТМСЗИ</option>
+          <option value="Базы данных">Базы данных</option>
+          <option value="Операционные системы">Операционные системы</option>
+          <option value="Управление информационной безопасностью"></option>
+        </select>
+      </div>
+      <div>
+        <p>Выберите форму контроля</p>
+        <p><input type="checkbox">Тест</p>
+        <p><input type="checkbox">Собеседование</p>
+        <p><input type="checkbox">Доклад</p>
+        <p><input type="checkbox">Контрольная работа</p>
+      </div>
+      <div>
+        <p>Выберите время</p>
+        <p><input type="radio" name="time" id="first" />9.00-10.30</p>
+        <p><input type="radio" name="time" id="second" />10.40-12.10</p>
+        <p><input type="radio" name="time" id="third" />12.50-14.20</p>
+        <p><input type="radio" name="time" id="fourth" />14.30-16.00</p>
+        <p><input type="radio" name="time" id="fifth" />16.10-17.40</p>
+      </div>
+      <div>
+        <p>Дополнительная информация</p>
+        <textarea name="information" id="" cols="30" rows="10"></textarea>
+      </div>
+      <input type="submit" value="Отправить">
+      <input type="reset" value="Сбросить">
+    </form>
+  </body>
+</html>
