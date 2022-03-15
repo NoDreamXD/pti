@@ -1,0 +1,13 @@
+.fontBold{
+    font-weight: bold;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 200px 400px 100px 250px;
+    gap: 20px;
+}
+
+.container > div {
+    background-color: #f002;
+}

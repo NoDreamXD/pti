@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="rus">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="main.css" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Анкета</title>
-  </head>
-  <body>
-    <form action="." method="GET">
-      <div>
-        <input type="text" name="surname"  placeholder="Введите фамилию">
-        <input type="text" name="name" placeholder="Введите имя">
-        <input type="text" name="login" placeholder="Введите логин">
-        <input type="password" name="password" placeholder="Введите пароль">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Анкета</title>
+</head>
+
+<body>
+  <form action="./index.html" method="GET">
+    <div class="container">
+
+      <div class="containerItemWide">
+        <input type="text" name="name" placeholder="Введите имя" autofocus required>
+        <input type="text" name="surname" placeholder="Введите фамилию" required>
+        <input type="text" name="login" placeholder="Введите логин" required>
+        <input type="password" name="password" placeholder="Введите пароль" required>
       </div>
       <div>
-        <p>Выберите предмет</p>
+        <p class="fontBold">Выберите предмет</p>
         <select name="selectedClasses">
           <option value="IST">
             Программные технологии интернет
@@ -36,27 +40,48 @@
         </select>
       </div>
       <div>
-        <p>Выберите форму контроля</p>
-        <p><input type="checkbox" name="controlForm" value="Test">Тест</p>
-        <p><input type="checkbox" name="controlForm" value="interview">Собеседование</p>
-        <p><input type="checkbox" name="controlForm" value="report">Доклад</p>
-        <p><input type="checkbox" name="controlForm" value="controlWork">Контрольная работа</p>
+        <p class="fontBold">Выберите форму контроля</p>
+        <div><input type="checkbox" name="controlForm" id="controlFormTest" value="test">
+          <label for="controlFormTest">Тест</label>
+        </div>
+        <div><input type="checkbox" name="controlForm" id="controlFormInterview" value="interview">
+          <label for="controlFormInterview">Собеседование</label>
+        </div>
+        <div><input type="checkbox" name="controlForm" id="controlFormReport" value="report">
+          <label for="controlFormReport">Доклад</label>
+        </div>
+        <div><input type="checkbox" name="controlForm" id="controlFormControlWork" value="controlWork">
+          <label for="controlFormControlWork">Контрольная работа</label>
+        </div>
       </div>
       <div>
-        <p>Выберите время</p>
-        <p><input type="radio" name="time" value="first" />9.00-10.30</p>
-        <p><input type="radio" name="time" value="second" />10.40-12.10</p>
-        <p><input type="radio" name="time" value="third" />12.50-14.20</p>
-        <p><input type="radio" name="time" value="fourth" />14.30-16.00</p>
-        <p><input type="radio" name="time" value="fifth" />16.10-17.40</p>
+        <p class="fontBold">Выберите время</p>
+        <div><input type="radio" name="time" value="first" id="timeFirst" />
+          <label for="timeFirst">9.00-10.30</label>
+        </div>
+        <div><input type="radio" name="time" value="second" id="timeSecond" />
+          <label for="timeSecond">10.40-12.10</label>
+        </div>
+        <div><input type="radio" name="time" value="third" id="timeThird" />
+          <label for="timeThird">12.50-14.20</label>
+        </div>
+        <div><input type="radio" name="time" value="fourth" id="timeFourth" />
+          <label for="timeFourth">14.30-16.00</label>
+        </div>
+        <div><input type="radio" name="time" value="fifth" id="timeFifth" />
+          <label for="timeFifth">16.10-17.40</label>
+        </div>
       </div>
-      <div>
-        <p>Дополнительная информация</p>
+      <div class="containerItemWide">
+        <p class="fontBold">Дополнительная информация</p>
         <textarea name="information" cols="30" rows="10"></textarea>
       </div>
-      <input type="submit" value="Отправить">
-      <input type="reset" value="Сбросить">
-      
-    </form>
-  </body>
+      <div>
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Сбросить">
+      </div>
+    </div>
+  </form>
+</body>
+
 </html>
