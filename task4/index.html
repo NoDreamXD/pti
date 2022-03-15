@@ -7,55 +7,56 @@
     <title>Анкета</title>
   </head>
   <body>
-    <form action="" method="post">
+    <form action="." method="GET">
       <div>
-        <input type="text" placeholder="Введите фамилию">
-        <input type="text" placeholder="Введите имя">
-        <input type="text" placeholder="Введите логин">
-        <input type="password" placeholder="Введите пароль">
+        <input type="text" name="surname"  placeholder="Введите фамилию">
+        <input type="text" name="name" placeholder="Введите имя">
+        <input type="text" name="login" placeholder="Введите логин">
+        <input type="password" name="password" placeholder="Введите пароль">
       </div>
       <div>
         <p>Выберите предмет</p>
-        <select name="Выберите предмет" id="disciplines">
-          <option value="Программные технологие Интернет">
+        <select name="selectedClasses">
+          <option value="IST">
             Программные технологии интернет
           </option>
-          <option value="Проектирование информационных систем">
+          <option value="DIS">
             Проектирование информационных систем
           </option>
-          <option value="Иностранный язык в профессиональной деятельности">
+          <option value="FLPA">
             Иностранный язык в профессиональной деятельности
           </option>
-          <option value="Компьютерные сети">Компьютерные сети</option>
-          <option value="Моделирование систем">Моделирование систем</option>
-          <option value="МКЦДИ">МКЦДИ</option>
-          <option value="ИТМСЗИ">ИТМСЗИ</option>
-          <option value="Базы данных">Базы данных</option>
-          <option value="Операционные системы">Операционные системы</option>
-          <option value="Управление информационной безопасностью"></option>
+          <option value="CN">Компьютерные сети</option>
+          <option value="MS">Моделирование систем</option>
+          <option value="CMIAI">МКЦДИ</option>
+          <option value="ETMMIP">ИТМСЗИ</option>
+          <option value="DB">Базы данных</option>
+          <option value="OS">Операционные системы</option>
+          <option value="ISM"></option>
         </select>
       </div>
       <div>
         <p>Выберите форму контроля</p>
-        <p><input type="checkbox">Тест</p>
-        <p><input type="checkbox">Собеседование</p>
-        <p><input type="checkbox">Доклад</p>
-        <p><input type="checkbox">Контрольная работа</p>
+        <p><input type="checkbox" name="controlForm" value="Test">Тест</p>
+        <p><input type="checkbox" name="controlForm" value="interview">Собеседование</p>
+        <p><input type="checkbox" name="controlForm" value="report">Доклад</p>
+        <p><input type="checkbox" name="controlForm" value="controlWork">Контрольная работа</p>
       </div>
       <div>
         <p>Выберите время</p>
-        <p><input type="radio" name="time" id="first" />9.00-10.30</p>
-        <p><input type="radio" name="time" id="second" />10.40-12.10</p>
-        <p><input type="radio" name="time" id="third" />12.50-14.20</p>
-        <p><input type="radio" name="time" id="fourth" />14.30-16.00</p>
-        <p><input type="radio" name="time" id="fifth" />16.10-17.40</p>
+        <p><input type="radio" name="time" value="first" />9.00-10.30</p>
+        <p><input type="radio" name="time" value="second" />10.40-12.10</p>
+        <p><input type="radio" name="time" value="third" />12.50-14.20</p>
+        <p><input type="radio" name="time" value="fourth" />14.30-16.00</p>
+        <p><input type="radio" name="time" value="fifth" />16.10-17.40</p>
       </div>
       <div>
         <p>Дополнительная информация</p>
-        <textarea name="information" id="" cols="30" rows="10"></textarea>
+        <textarea name="information" cols="30" rows="10"></textarea>
       </div>
       <input type="submit" value="Отправить">
       <input type="reset" value="Сбросить">
+      
     </form>
   </body>
 </html>
