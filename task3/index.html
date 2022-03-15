@@ -1,72 +1,66 @@
 <!DOCTYPE html>
 <html lang="rus">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="main.css" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Города России</title>
-  </head>
-  <body>
-    <header><h1>Города России</h1></header>
-    <nav>
-      <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D0%BA">Владивосток</a>
-    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4">Калининград</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Города России</title>
+</head>
+
+<body>
+  <header>
+    <h1>Города России</h1>
+  </header>
+  <nav>
+    <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D0%BA"
+      target="_blank">Владивосток</a>
+    <a
+      href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4">Калининград</a>
     <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0">Москва</a>
-    <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3">Санкт-Петербург</a>
+    <a
+      href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3">Санкт-Петербург</a>
     <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C">Казань</a>
-    </nav>
-    <section id="map">
-      <img src="map.jpg" width="820px" height="530px" usemap="#Navigation" />
-      <map name="Navigation">
-        <area
-          shape="poly"
-          coords="162,228,188,228,198,260,180,270"
-          href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C"
-          alt="Казань"
-        />
-        <area
-          shape="poly"
-          coords="134,134,150,150,140,160,146,175,124,170,124,142"
-          href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0"
-          alt="Москва"
-        />
-        <area
-          shape="poly"
-          coords="170,60,182,70,170,86,190,110,170,116,147,80,153,70,162,66,166,80"
-          href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3"
-          alt="Санкт-Петербург"
-        />
-        <area
-          shape="poly"
-          coords="90,2,100,18,90,30,86,20"
-          href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4"
-          alt="Калининград"
-        />
-        <area
-          shape="poly"
-          coords="702,424,712,436,690,516,680,516,674,526,670,506,664,498,670,488,680,484,680,464,704,440,670,432"
-          href="https://ru.wikipedia.org/wiki/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D0%BA"
-          alt="Владивосток"
-        />
-      </map>
-    </section>
-    <section id="collage">
-      <div class="image" style="z-index: 0">
-        <img src="владивосток.jpg" width="360px" height="200px" />
-      </div>
-      <div class="image" style="left: 230px; z-index: 1; top: -40px">
-        <img src="москва.jpg" width="360px" height="200px" />
-      </div>
-      <div class="image" style="left: 460px; top: -408px; z-index: 0">
-        <img src="питер.jpg" width="360px" height="200px" />
-      </div>
-      <div class="image" style="z-index: 0; top: -280px">
-        <img src="калининград.jpg" width="360px" height="200px" />
-      </div>
-      <div class="image" style="top: -484px; z-index: 0; left: 460px">
-        <img src="казань.jpg" width="360px" height="200px" />
-      </div>
-    </section>
-    <footer><p>Все права защищены</p></footer>
-  </body>
+  </nav>
+  <section id="map">
+    <img src="map.jpg" width="820px" height="530px" usemap="#Navigation" />
+    <map name="Navigation">
+      <area shape="poly" coords="162,228,188,228,198,260,180,270"
+        href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C" alt="Казань" />
+      <area shape="poly" coords="134,134,150,150,140,160,146,175,124,170,124,142"
+        href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0" alt="Москва" />
+      <area shape="poly" coords="170,60,182,70,170,86,190,110,170,116,147,80,153,70,162,66,166,80"
+        href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3"
+        alt="Санкт-Петербург" />
+      <area shape="poly" coords="90,2,100,18,90,30,86,20"
+        href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4"
+        alt="Калининград" />
+      <area shape="poly"
+        coords="702,424,712,436,690,516,680,516,674,526,670,506,664,498,670,488,680,484,680,464,704,440,670,432"
+        href="https://ru.wikipedia.org/wiki/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D0%BA"
+        alt="Владивосток" />
+    </map>
+  </section>
+  <section id="collage">
+    <div class="image" style="z-index: 0">
+      <img src="владивосток.jpg" width="360px" height="200px" />
+    </div>
+    <div class="image" style="left: 230px; z-index: 1; top: -40px">
+      <img src="москва.jpg" width="360px" height="200px" />
+    </div>
+    <div class="image" style="left: 460px; top: -408px; z-index: 0">
+      <img src="питер.jpg" width="360px" height="200px" />
+    </div>
+    <div class="image" style="z-index: 0; top: -280px">
+      <img src="калининград.jpg" width="360px" height="200px" />
+    </div>
+    <div class="image" style="top: -484px; z-index: 0; left: 460px">
+      <img src="казань.jpg" width="360px" height="200px" />
+    </div>
+  </section>
+  <footer>
+    <p>Все права защищены</p>
+  </footer>
+</body>
+
 </html>
