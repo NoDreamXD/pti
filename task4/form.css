@@ -1,0 +1,44 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  grid-template-areas:
+    "A A"
+    "B C"
+    "D E"
+    "F F";
+}
+
+.textBoxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid-container > div {
+  background-color: #f002;
+}
+
+.textBoxes {
+  grid-area: A;
+}
+
+.dropDown {
+  grid-area: B;
+}
+
+.radioButton {
+  grid-area: C;
+}
+
+.checkBoxes {
+  grid-area: D;
+}
+
+.informationField {
+  grid-area: E;
+}
+
+.buttons {
+  grid-area: F;
+}

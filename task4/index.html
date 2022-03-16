@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="rus">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="form.css" />
+    <link rel="stylesheet" type="text/css" href="general.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Анкета</title>
+  </head>
+  <body>
+    <form action="./index.html" method="GET">
+      <div class="grid-container">
+        <div class="textBoxes">
+          <input
+            type="text"
+            name="name"
+            placeholder="Введите имя"
+            autofocus
+            required
+          />
+          <input
+            type="text"
+            name="surname"
+            placeholder="Введите фамилию"
+            required
+          />
+          <input
+            type="text"
+            name="login"
+            placeholder="Введите логин"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Введите пароль"
+            required
+          />
+        </div>
+        <div class="dropDown">
+          <p class="fontBold">Выберите предмет</p>
+          <select name="selectedClasses">
+            <option value="IST">Программные технологии интернет</option>
+            <option value="DIS">Проектирование информационных систем</option>
+            <option value="FLPA">
+              Иностранный язык в профессиональной деятельности
+            </option>
+            <option value="CN">Компьютерные сети</option>
+            <option value="MS">Моделирование систем</option>
+            <option value="CMIAI">МКЦДИ</option>
+            <option value="ETMMIP">ИТМСЗИ</option>
+            <option value="DB">Базы данных</option>
+            <option value="OS">Операционные системы</option>
+            <option value="ISM"></option>
+          </select>
+        </div>
+        <div class="radioButton">
+          <p class="fontBold">Выберите время</p>
+          <div>
+            <input type="radio" name="time" value="first" id="timeFirst" />
+            <label for="timeFirst">9.00-10.30</label>
+          </div>
+          <div>
+            <input type="radio" name="time" value="second" id="timeSecond" />
+            <label for="timeSecond">10.40-12.10</label>
+          </div>
+          <div>
+            <input type="radio" name="time" value="third" id="timeThird" />
+            <label for="timeThird">12.50-14.20</label>
+          </div>
+          <div>
+            <input type="radio" name="time" value="fourth" id="timeFourth" />
+            <label for="timeFourth">14.30-16.00</label>
+          </div>
+          <div>
+            <input type="radio" name="time" value="fifth" id="timeFifth" />
+            <label for="timeFifth">16.10-17.40</label>
+          </div>
+        </div>
+        <div class="checkBoxes">
+          <p class="fontBold">Выберите форму контроля</p>
+          <div>
+            <input
+              type="checkbox"
+              name="controlForm"
+              id="controlFormTest"
+              value="test"
+            />
+            <label for="controlFormTest">Тест</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="controlForm"
+              id="controlFormInterview"
+              value="interview"
+            />
+            <label for="controlFormInterview">Собеседование</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="controlForm"
+              id="controlFormReport"
+              value="report"
+            />
+            <label for="controlFormReport">Доклад</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="controlForm"
+              id="controlFormControlWork"
+              value="controlWork"
+            />
+            <label for="controlFormControlWork">Контрольная работа</label>
+          </div>
+        </div>
+        <div class="informationField">
+          <p class="fontBold">Дополнительная информация</p>
+          <textarea name="information" cols="50" rows="10"></textarea>
+        </div>
+        <div class="buttons">
+          <input type="submit" value="Отправить" />
+          <input type="reset" value="Сбросить" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
