@@ -1,13 +1,42 @@
-.fontBold{
-    font-weight: bold;
+.fontBold {
+  font-weight: bold;
 }
-.container{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 200px 400px 100px 250px;
-    gap: 20px;
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 20px;
+  grid-template-areas:
+    "containerItemWide containerItemWide"
+    "ordinaryLeftTop ordinaryRightTop"
+    "ordinaryLeftBottom ordinaryRightBottom"
+    "containerItemWideBottom containerItemWideBottom";
+}
+.containerItemWide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
 }
 
-.container > div {
-    background-color: #f002;
+.grid-container > div {
+  background-color: #f002;
+}
+.containerItemWide {
+  grid-area: containerItemWide;
+}
+.containerItemWideBottom {
+  grid-area: containerItemWide;
+}
+.ordinaryLeftTop {
+  grid-area: ordinaryLeftTop;
+}
+.ordinaryLeftBottom {
+  grid-area: ordinaryLeftBottom;
+}
+.ordinaryRightTop {
+  grid-area: ordinaryRightTop;
+}
+.ordinaryRightBottom {
+  grid-area: ordinaryRightBottom;
 }
