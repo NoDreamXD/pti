@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="rus">
-
 <head>
   <meta charset="UTF-8" />
   <link rel="stylesheet" type="text/css" href="form.css" />
@@ -9,10 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Анкета</title>
 </head>
-
 <body>
-  <form action="./index.html" method="GET">
-    <div class="grid-container">
+  <form id="form" name="form" onsubmit="Complete()" method="POST">
+  <div class="grid-container">
       <div class="textBoxes">
         <input type="text" name="name" placeholder="Введите имя" autofocus required class="inputText" />
         <input type="text" name="surname" placeholder="Введите фамилию" required class="inputText" />
@@ -87,7 +85,7 @@
         <input type="reset" value="Сбросить" />
       </div>
     </div>
+    <SCRIPT type="text/javascript" src="script.js"></SCRIPT>
   </form>
 </body>
-
 </html>
