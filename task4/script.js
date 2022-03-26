@@ -1,5 +1,11 @@
+function checkboxesToString(boxes) {
+  return Array.from(boxes)
+    .filter((box) => box.checked)
+    .map((box) => box.value)
+    .join(", ");
+}
+
 function Complete() {
-  var w = window.open();
   var name = "Имя: " + document.form.name.value;
   var surname = "Фамилия: " + document.form.surname.value;
   var login = "Логин: " + document.form.login.value;
@@ -9,11 +15,11 @@ function Complete() {
     "Выбран предмет: " +
     document.form.selectedClasses.options[nSelectedClasses].value;
   var time = "Время: " + document.form.time.value;
-    var controlForm =
-    "Форма контроля: " + document.form.controlForm.value;
+  var controlForm =
+    "Форма контроля: " + checkboxesToString(document.form.controlForm);
   var information =
     "Дополнительная информация: " + document.form.information.value;
-  // console.log(w)
+  var w = window.open();
   w.document.write(
     name +
       "<br/>" +
@@ -29,7 +35,6 @@ function Complete() {
       "<br/>" +
       controlForm +
       "<br/>" +
-      information 
+      information
   );
 }
-// function 
