@@ -19,9 +19,10 @@ function Complete() {
     "Форма контроля: " + checkboxesToString(document.form.controlForm);
   var information =
     "Дополнительная информация: " + document.form.information.value;
-  var w = window.open();
-  w.document.write(
-    name +
+   var w = window.open();
+   w.document.write('<html> <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <title>Данные с формы</title> </head>');
+      w.document.write(
+        name +
       "<br/>" +
       surname +
       "<br/>" +
@@ -35,6 +36,5 @@ function Complete() {
       "<br/>" +
       controlForm +
       "<br/>" +
-      information
-  );
+      information );
 }
