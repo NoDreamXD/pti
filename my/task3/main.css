@@ -1,0 +1,80 @@
+h1 {
+  text-align: center;
+  color: rgb(76, 146, 76);
+}
+body {
+  background-color: rgb(181, 228, 190);
+}
+.collage {
+  width: 820px;
+  height: 530px;
+  position: absolute;
+  top: 110px;
+  left: 56%;
+
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+
+  border: 1px solid #447792;
+}
+.collage img {
+  height: 100%;
+  width: 100%;
+  box-shadow: 5px 5px 7px 4px #447792c4;
+}
+
+.collage > :nth-child(1) {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 4;
+}
+
+.collage > :nth-child(2) {
+  grid-column: 7 / span 10;
+  grid-row: 1 / span 4;
+}
+
+.collage > :nth-child(3) {
+  grid-column: 1 / span 4;
+  grid-row: 7 / span 10;
+}
+
+.collage > :nth-child(4) {
+  grid-column: 7 / span 10;
+  grid-row: 7 / span 10;
+}
+
+.collage > :nth-child(5) {
+  grid-column: 4 / span 4;
+  grid-row: 4 / span 4;
+}
+
+#map {
+  width: 820px;
+}
+area {
+  cursor: pointer;
+}
+footer {
+  width: 100%;
+  text-align: center;
+}
+footer p {
+  color: rgb(76, 146, 92);
+}
+nav {
+  height: 30px;
+}
+nav a {
+  position: relative;
+  left: 38%;
+  font-size: 14pt;
+  color: rgb(77, 146, 76);
+}
+a:hover {
+  color: #136d16;
+}
+footer {
+  position: fixed;
+  bottom: 0px;
+}
