@@ -1,4 +1,4 @@
-function checkboxesToString(boxes) {
+ function checkboxesToString(boxes) {
   return Array.from(boxes)
     .filter((box) => box.checked)
     .map((box) => box.value)

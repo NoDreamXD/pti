@@ -1,45 +1,37 @@
 <!DOCTYPE html>
 <html lang="rus">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="main.css" />
-    <title>Сторона клиента</title>
-  </head>
-  <body>
-    <script type="text/javascript" src="script.js"></script>
-    <nav>
-      <img
-        src="panel/city.gif"
-        onmouseover="this.src='panel/city1.gif'"
-        onmouseout="this.src='panel/city.gif'"
-      />
-      <img
-        src="panel/tour.gif"
-        onmouseover="this.src='panel/tour1.gif'"
-        onmouseout="this.src='panel/tour.gif'"
-      />
-      <img
-        src="panel/inet.gif"
-        onmouseover="this.src='panel/inet1.gif'"
-        onmouseout="this.src='panel/inet.gif'"
-      />
-      <img
-        src="panel/real.gif"
-        onmouseover="this.src='panel/real1.gif'"
-        onmouseout="this.src='panel/real.gif'"
-      />
-      <img
-        src="panel/edu.gif"
-        onmouseover="this.src='panel/edu1.gif'"
-        onmouseout="this.src='panel/edu.gif'"
-      />
-      <img
-        src="panel/bus.gif"
-        onmouseover="this.src='panel/bus1.gif'"
-        onmouseout="this.src='panel/bus.gif'"
-      />
-    </nav>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <title>Сторона клиента</title>
+  <script type="text/javascript" defer src="script.js"></script>
+</head>
+<body>
+  <nav>
+    <img id="city" src="panel/city.gif" />
+    <img id="tour" src="panel/tour.gif" />
+    <img id="inet" src="panel/inet.gif" />
+    <img id="real" src="panel/real.gif" />
+    <img id="edu" src="panel/edu.gif" />
+    <img id="bus" src="panel/bus.gif" />
+  </nav>
+<div class="slider">
+  <img id="puppyImage" src="assets/images/img1.jpg" />
+</div>
+  <select id="puppies">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+  </select>
+  <div class="slideShow"> 
+    <img id="puppyImageNew" src="assets/images/img1.jpg" />
+  </div>
+</body>
+
 </html>
