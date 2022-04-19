@@ -19,12 +19,15 @@ const formFormatDict = [
     label: "Дополнительная информация",
     getValue: (form) => form.information.value,
   },
+  {
+    label: "+ addd",
+    getValue: () => "form.information.value",
+  },
 ];
 
-// function Complete() {
-//   var w = window.open();
-//   w.document.write
-// }
+function Complete() {
+  window.open().document.write(parseForm(document.form, formFormatDict));
+}
 
 function checkboxesToString(boxes) {
   return Array.from(boxes)
