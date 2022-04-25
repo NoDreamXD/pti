@@ -1,6 +1,6 @@
-const GRID_SIZE = 71;
-
-const BORDER_OFFSET = 3;
+const GRID_SIZE = 101;
+const BORDER_OFFSET = 1;
+const FRAME_RATE = 1000;
 
 const canvas = document.getElementById("mainCanvas");
 const ctx = canvas.getContext("2d");
@@ -12,27 +12,31 @@ const cellHeight = canvasHeight / GRID_SIZE;
 
 let pts = [[(GRID_SIZE - 1) / 2, (GRID_SIZE - 1) / 2]];
 let wanderingPt = null;
-// let y = 5;
-// setInterval(() => {
-//   ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-//   ctx.beginPath()
-//   ctx.rect(60, y, 50, 50);
-//   ctx.fill();
-//   y = y + 10;
-// }, 250);
 
 function clearCtx() {
   ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 }
 
-function drawCell(i, j) {
+function drawCell(i, j, fill='#000') {
   ctx.beginPath();
-  ctx.rect(cellWidth * j - 1, cellHeight * i - 1, cellWidth + 2, cellHeight + 2);
+  ctx.fillStyle = fill;
+  ctx.rect(
+    cellWidth * j - 1,
+    cellHeight * i - 1,
+    cellWidth + 2,
+    cellHeight + 2
+  );
   ctx.fill();
 }
 
 function drawPoints() {
-  pts.map((pt) => drawCell(pt[0], pt[1]));
+  pts.map((pt) => drawCell(...pt));
+}
+
+function sort(arr) {
+  arr.sort((a, b) => {
+    return a - b;
+  });
 }
 
 function getMinMaxCoordinatesPts() {
@@ -43,8 +47,8 @@ function getMinMaxCoordinatesPts() {
     ],
     [[], []]
   );
-  xs.sort();
-  ys.sort();
+  sort(xs);
+  sort(ys);
   const [xMin, xMax] = [xs[0], xs[xs.length - 1]];
   const [yMin, yMax] = [ys[0], ys[ys.length - 1]];
   return { xMin, xMax, yMin, yMax };
@@ -133,6 +137,6 @@ setInterval(() => {
   onChangeWanderingPoint();
   drawBorder();
   if (wanderingPt) {
-    drawCell(...wanderingPt);
+    drawCell(...wanderingPt, fill='#ff8d0b');
   }
-}, 10);
+}, 1000 / FRAME_RATE);
