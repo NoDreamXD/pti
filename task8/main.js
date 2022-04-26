@@ -1,5 +1,5 @@
 const GRID_SIZE = 101;
-const BORDER_OFFSET = 1;
+const BORDER_OFFSET = 3;
 const FRAME_RATE = 1000;
 
 const canvas = document.getElementById("mainCanvas");
@@ -140,3 +140,5 @@ setInterval(() => {
     drawCell(...wanderingPt, fill='#ff8d0b');
   }
 }, 1000 / FRAME_RATE);
+
+
