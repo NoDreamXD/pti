@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div
+      id="source"
+      class="conteiner"
+      ondragenter="return dragEnter(event)"
+      ondrop="return dragDrop(event)"
+      ondragover="return dragOver(event)"
+    >
+      <div
+        id="firstDragElement"
+        class="elementFromSource"
+        ondragstart="return dragStart(event)"
+        ondragend="return dragEnd(event)"
+        draggable="true"
+      >
+        Text 1
+      </div>
+
+      <div
+        id="fourthDragElement"
+        class="elementFromSource"
+        ondragstart="return dragStart(event)"
+        ondragend="return dragEnd(event)"
+        draggable="true"
+      >
+        Text 4
+      </div>
+    </div>
+
+    <div
+      id="target"
+      class="conteiner"
+      ondragenter="return dragEnter(event)"
+      ondrop="return dragDrop(event)"
+      ondragover="return dragOver(event)"
+    >
+      <div
+        id="secondDragElement"
+        class="elementFromTarget"
+        ondragstart="return dragStart(event)"
+        ondragend="return dragEnd(event)"
+        draggable="true"
+      >
+        Text 2
+      </div>
+
+      <div
+        id="fifthDragElement"
+        class="elementFromTarget"
+        ondragstart="return dragStart(event)"
+        ondragend="return dragEnd(event)"
+        draggable="true"
+      >
+        Text 5
+      </div>
+    </div>
+
+    <div
+      id="anotherTarget"
+      class="conteiner"
+      ondragenter="return dragEnter(event)"
+      ondrop="return dragDrop(event)"
+      ondragover="return dragOver(event)"
+    >
+      <div
+        id="thirdDragElement"
+        class="elementFromAnotherTarget"
+        ondragstart="return dragStart(event)"
+        ondragend="return dragEnd(event)"
+        draggable="true"
+      >
+        Text 3
+      </div>
+      <div
+        id="sixthDragElement"
+        class="elementFromAnotherTarget"
+        ondragstart="return dragStart(event)"
+        ondragend="return dragEnd(event)"
+        draggable="true"
+      >
+        Text 6
+      </div>
+    </div>
+  </body>
+</html>

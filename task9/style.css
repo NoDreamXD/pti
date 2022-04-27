@@ -1,0 +1,17 @@
+.conteiner {
+  border: 2px solid red;
+  height: 200px;
+  width: 100px;
+  float: left;
+  margin: 50px;
+}
+
+.conteiner > * {
+  border: 2px solid black;
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+}
