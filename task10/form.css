@@ -1,0 +1,87 @@
+.grid-container {
+  display: grid;
+  /* grid-template-columns: 1fr 2fr; */
+  gap: 20px;
+  grid-template-areas:
+    "A A"
+    "B C"
+    "D E"
+    "F F";
+}
+
+.textBoxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid-container > div {
+  background-color: #f002;
+}
+
+.textBoxes {
+  grid-area: A;
+}
+
+.dropDown {
+  grid-area: B;
+}
+
+.radioButton {
+  grid-area: C;
+}
+
+.checkBoxes {
+  grid-area: D;
+}
+
+.informationField {
+  grid-area: E;
+}
+
+.buttons {
+  grid-area: F;
+}
+
+@media all and (min-width: 500px)  {
+  .grid-container {
+    grid-template-columns: repeat(2, 374px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 364px);
+  gap: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .textBoxes {
+    grid-template-columns: repeat(2, 364px);
+    gap: 5px;
+  }
+  .inputText{
+    width: 250px;
+  }
+} 
+
+@media screen and (max-width : 420px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    grid-template-areas:
+    "A"
+    "B"
+    "C"
+    "D"
+    "E"
+    "F";
+    margin: 0px;
+  }
+  .textBoxes {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
