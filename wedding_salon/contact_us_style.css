@@ -1,25 +1,25 @@
 .w-100 {
-  width: 100%;
-}
-
-.w-50 {
-  width: 50%;
-}
-
-.mb-1 {
-  margin-bottom: 4px;
-}
-.mb-2 {
-  margin-bottom: 8px;
-}
-.mb-3 {
-  margin-bottom: 16px;
-}
-
-.float-left {
-  float: left;
-}
-
+    width: 100%;
+  }
+  
+  .w-50 {
+    width: 50%;
+  }
+  
+  .mb-1 {
+    margin-bottom: 4px;
+  }
+  .mb-2 {
+    margin-bottom: 8px;
+  }
+  .mb-3 {
+    margin-bottom: 16px;
+  }
+  
+  .float-left {
+    float: left;
+  }
+  
 a {
   cursor: pointer;
   color: #8b1474;
@@ -32,71 +32,52 @@ a:visited {
   color: #8b1474;
 }
 
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  margin: 0px;
+  background-color: #fffcfb;
+}
+
 .logo {
   height: 76px;
   width: 76px;
 }
-nav{
-  padding-right: 8px;
+
+span {
+  color: #8b1474;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
-.products {
-  overflow: hidden;
-  position: relative;
-}
-
-.products .control {
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-  position: absolute;
-  left: 0;
-  top: 0;
+.footer_span {
+  color: #8b1474;
   display: flex;
-  justify-content: space-between;
-
-  padding: 0 100px;
-}
-
-.products .control > button {
-  width: 50px;
-  border: none;
-  border-radius: 0;
-  background-color: #fff3;
-  z-index: 2;
-}
-
-.products .control > button:hover {
-  background-color: #fff8;
-}
-
-.product_name {
-  color: #8b1474;
+  justify-content: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin: 4px;
 }
-.product_cost {
-  color: #8b1474;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin: 4px;
-}
-
-.shedule_image_container {
+footer {
   width: 100%;
+  height: 32px;
 }
-
-.shedule_image {
-  width: 100%;
-  margin: auto;
+nav {
+  padding-right: 8px;
 }
 
 input[type="text"] {
   height: 36x;
   box-sizing: border-box;
   padding: 8px;
-  background-color: #e1eff5;
+  background-color: #f3dff3;
   color: #8b1474;
   outline: none;
   border: 1px solid transparent;
@@ -108,7 +89,7 @@ input[type="text"]:focus-visible {
 }
 
 textarea {
-  background-color: #e1eff5;
+  background-color: #f3dff3;
   color: #8b1474;
   border-bottom-color: #8b1474;
   outline: none;
@@ -125,34 +106,6 @@ input[type="submit"] {
   color: #fffcfb;
   font-size: larger;
 }
-
-body {
-  margin: 0px;
-  background-color: #fffcfb;
-}
-
-header {
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.salon_photo {
-  width: 100%;
-}
-
-.product_photo {
-  width: 345px;
-  height: 517px;
-}
-
-.products {
-  padding: 40px;
-  display: flex;
-  justify-content: center;
-  row-gap: 30px;
-}
 .contact_form_information {
   display: flex;
   flex-direction: column;
@@ -160,11 +113,10 @@ header {
   width: 50%;
 }
 .contact_form {
-  background-color: #e1eff5;
+  background-color: #f3dff3;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 32px;
 }
 
 .contact_form form {
@@ -193,33 +145,4 @@ label {
   color: #8b1474;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-
-.visible_container_with_photo {
-  width: 1095px;
-  display: flex;
-  justify-content: flex-start;
-  row-gap: 30px;
-  overflow: hidden;
-}
-
-.container_with_product_photo {
-  transition: margin-left 0.228s linear;
-  display: flex;
-  justify-content: center;
-  column-gap: 30px;
-}
-
-.footer_span {
-  color: #8b1474;
-  display: flex;
-  justify-content: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-footer{
-  width: 100%;
-  height: 32px;
 }
