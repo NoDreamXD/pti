@@ -57,7 +57,6 @@
             }
             echo('<br/>');
         } else {
-            echo('Sex');
             echo ("Форма контроля: " . $controlForm . "<br/>");
         }
     } else {
