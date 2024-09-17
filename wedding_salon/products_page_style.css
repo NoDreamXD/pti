@@ -1,0 +1,81 @@
+a {
+  cursor: pointer;
+  color: #8b1474;
+  text-decoration: none;
+  margin: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+a:visited {
+  color: #8b1474;
+}
+
+.logo {
+  height: 76px;
+  width: 76px;
+}
+nav {
+  padding-right: 8px;
+}
+
+.some_other_products {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  width: 470px;
+  height: 470px;
+}
+
+body {
+  margin: 0px;
+  background-color: #fffcfb;
+}
+.product_card {
+  background-color: #f3dff3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 64px;
+}
+span {
+  color: #8b1474;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* text-align: center; */
+  margin-top: 36px;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 56px;
+}
+#main_heading {
+  font-size: 24pt;
+}
+#subtitle {
+  font-size: 16pt;
+}
+
+footer {
+  width: 100%;
+  height: 32px;
+}
+.footer_span {
+  color: #8b1474;
+  display: flex;
+  justify-content: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

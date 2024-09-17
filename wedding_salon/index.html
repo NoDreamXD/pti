@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="shortcut icon" type="image/png" href="./assets/logo.png" />
+    <script type="text/javascript" defer src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/logo.png" class="logo" />
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="store.html">Магазин</a>
+        <a href="products_page.html">Товары</a>
+        <a href="contact_us.html">Связаться с нами</a>
+        <a href="about_us.html">О нас</a>
+      </nav>
+    </header>
+    <div>
+      <img src="assets/salon.png" class="salon_photo" />
+    </div>
+    <div class="products">
+      <div class="control">
+        <button onClick="moveSlider(-1)">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="3em"
+            height="3em"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#8b1474"
+              d="M15.125 21.1L6.7 12.7q-.15-.15-.212-.325q-.063-.175-.063-.375t.063-.375q.062-.175.212-.325l8.425-8.425q.35-.35.875-.35t.9.375q.375.375.375.875t-.375.875L9.55 12l7.35 7.35q.35.35.35.862q0 .513-.375.888t-.875.375q-.5 0-.875-.375Z"
+            />
+          </svg>
+        </button>
+        <button onClick="moveSlider(1)">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            width="3em"
+            height="3em"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#8b1474"
+              d="M7.15 21.1q-.375-.375-.375-.888q0-.512.375-.887L14.475 12l-7.35-7.35q-.35-.35-.35-.875t.375-.9q.375-.375.888-.375q.512 0 .887.375l8.4 8.425q.15.15.213.325q.062.175.062.375t-.062.375q-.063.175-.213.325L8.9 21.125q-.35.35-.862.35q-.513 0-.888-.375Z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="visible_container_with_photo">
+        <div id="product_slider" class="container_with_product_photo">
+          <div class="product">
+            <img src="assets/dress1.jpg" class="product_photo" />
+            <p class="product_name">Gabbiano Милуоки</p>
+            <p class="product_cost">45 600,00 Р</p>
+          </div>
+
+          <div class="product">
+            <img src="assets/dress2.jpg" class="product_photo" />
+            <p class="product_name">Jozi Берта</p>
+            <p class="product_cost">44 400,00 Р</p>
+          </div>
+
+          <div class="product">
+            <img src="assets/dress3.jpg" class="product_photo" />
+            <p class="product_name">Sellini Helona</p>
+            <p class="product_cost">57 600,00 Р</p>
+          </div>
+
+          <div class="product">
+            <img src="assets/dress4.jpg" class="product_photo" />
+            <p class="product_name">Jozi Zarina</p>
+            <p class="product_cost">35 500,00 Р</p>
+          </div>
+
+          <div class="product">
+            <img src="assets/dress5.jpg" class="product_photo" />
+            <p class="product_name">Ida Torez Rambla</p>
+            <p class="product_cost">60 900,00 Р</p>
+          </div>
+
+          <div class="product">
+            <img src="assets/dress6.jpg" class="product_photo" />
+            <p class="product_name">Jozi Annika</p>
+            <p class="product_cost">39 800,00 Р</p>
+          </div>
+
+          <div class="product">
+            <img src="assets/dress7.jpg" class="product_photo" />
+            <p class="product_name">Anna Kuznetcova Oda</p>
+            <p class="product_cost">38 000,00 Р</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shedule_image_container">
+      <img src="assets/shedule.png" alt="" class="shedule_image" />
+    </div>
+      <div class="contact_form">
+        <div class="contact_form_information">
+          <span class="contact_information">СВЯЖИТЕСЬ С НАМИ</span>
+          <span class="contact_information"
+            >ул. Арбат, 1а, Москва, 119019, Россия</span
+          >
+          <span class="contact_information">info@mysite.com</span>
+          <span class="contact_information">+7 123 456-78-90</span>
+        </div>
+        <form action="index.php" className="w-50" method="POST">
+          <div class="input-wrapper w-50">
+            <label for="user_name">Имя *</label>
+            <input
+              type="text"
+              name="Name"
+              id="user_name"
+              placeholder="Введите свое имя"
+              required
+            />
+          </div>
+          <div class="input-wrapper w-50">
+            <label for="user_email">Эл. почта *</label>
+            <input
+              type="text"
+              name="Email"
+              id="user_email"
+              placeholder="Добавьте эл. почту"
+              required
+            />
+          </div>
+          <div class="w-100 mb-2 float-left"></div>
+          <div class="input-wrapper w-50">
+            <label for="user_phone_number">Телефон</label>
+            <input
+              type="text"
+              name="Phone_number"
+              id="user_phone_number"
+              placeholder="Добавьте номер телефона"
+            />
+          </div>
+          <div class="input-wrapper w-50">
+            <label for="user_address">Адрес</label>
+            <input
+              type="text"
+              name="Addres"
+              id="user_address"
+              placeholder="Добавьте адрес"
+            />
+          </div>
+          <div class="w-100 mb-2 float-left"></div>
+          <div class="input-wrapper w-100">
+            <label for="letter_theme">Тема</label>
+            <input
+              type="text"
+              name="Theme"
+              id="letter_theme"
+              placeholder="Укажите тему"
+              class="theme"
+            />
+          </div>
+          <div class="w-100 mb-2 float-left"></div>
+          <div class="input-wrapper w-100 mb-2">
+            <label for="user_message">Сообщение</label>
+            <textarea
+              name="Message"
+              id="user_message"
+              cols="40"
+              rows="10"
+              placeholder="Добавьте сообщение..."
+            ></textarea>
+          </div>
+          <input
+            type="submit"
+            name="send_button"
+            id="send_button"
+            value="Отправить"
+          />
+        </form>
+      </div>
+      <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d961.4803399904803!2d37.598436477485386!3d55.752159200476065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a4d078690df%3A0x776cfe0f7ad0a8af!2z0YPQuy4g0JDRgNCx0LDRgiwgMdCwLCDQnNC-0YHQutCy0LAsIDExOTAxOQ!5e0!3m2!1sru!2sru!4v1653585505481!5m2!1sru!2sru"
+        width=100%
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    <footer>
+      <span class="footer_span"
+        >2022 Wendy. Дизайн сайта создан на Wix.com</span
+      >
+    </footer>
+  </body>
+</html>

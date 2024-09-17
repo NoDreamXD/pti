@@ -1,0 +1,71 @@
+a {
+  cursor: pointer;
+  color: #8b1474;
+  text-decoration: none;
+  margin: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+a:visited {
+  color: #8b1474;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  margin: 0px;
+  background-color: #fffcfb;
+}
+
+.logo {
+  height: 76px;
+  width: 76px;
+}
+.information_about_wendy {
+  width: 50%;
+  background-color: #f3dff3;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+span {
+  color: #8b1474;
+  margin: 36px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.about_us_photo {
+  width: 48%;
+}
+.text_and_photo_about_us {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_span {
+  color: #8b1474;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+footer span{
+  margin-bottom: 8px;
+}
+nav{
+    padding-right: 8px;
+}

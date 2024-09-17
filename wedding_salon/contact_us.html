@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="contact_us_style.css" />
+    <link rel="shortcut icon" type="image/png" href="./assets/logo.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Связаться с нами</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/logo.png" class="logo" />
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="store.html">Магазин</a>
+        <a href="products_page.html">Товары</a>
+        <a href="contact_us.html">Связаться с нами</a>
+        <a href="about_us.html">О нас</a>
+      </nav>
+    </header>
+
+    <div class="contact_form">
+      <div class="contact_form_information">
+        <span class="contact_information">СВЯЖИТЕСЬ С НАМИ</span>
+        <span class="contact_information"
+          >ул. Арбат, 1а, Москва, 119019, Россия</span
+        >
+        <span class="contact_information">info@mysite.com</span>
+        <span class="contact_information">+7 123 456-78-90</span>
+      </div>
+      <form action="" className="w-50">
+        <div class="input-wrapper w-50">
+          <label for="user_name">Имя *</label>
+          <input
+            type="text"
+            name="Name"
+            id="user_name"
+            placeholder="Введите свое имя"
+            required
+          />
+        </div>
+        <div class="input-wrapper w-50">
+          <label for="user_email">Эл. почта *</label>
+          <input
+            type="text"
+            name="Email"
+            id="user_email"
+            placeholder="Добавьте эл. почту"
+            required
+          />
+        </div>
+        <div class="w-100 mb-2 float-left"></div>
+        <div class="input-wrapper w-50">
+          <label for="user_phone_number">Телефон</label>
+          <input
+            type="text"
+            name="Phone_number"
+            id="user_phone_number"
+            placeholder="Добавьте номер телефона"
+          />
+        </div>
+        <div class="input-wrapper w-50">
+          <label for="user_address">Адрес</label>
+          <input
+            type="text"
+            name="Addres"
+            id="user_address"
+            placeholder="Добавьте адрес"
+          />
+        </div>
+        <div class="w-100 mb-2 float-left"></div>
+        <div class="input-wrapper w-100">
+          <label for="letter_theme">Тема</label>
+          <input
+            type="text"
+            name="Theme"
+            id="letter_theme"
+            placeholder="Укажите тему"
+          />
+        </div>
+        <div class="w-100 mb-2 float-left"></div>
+        <div class="input-wrapper w-100 mb-2">
+          <label for="user_message">Сообщение</label>
+          <textarea
+            name="Message"
+            id="user_message"
+            cols="40"
+            rows="10"
+            placeholder="Добавьте сообщение..."
+          ></textarea>
+        </div>
+        <input
+          type="submit"
+          name="send_button"
+          id="send_button"
+          value="Отправить"
+        />
+      </form>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d961.4803399904803!2d37.598436477485386!3d55.752159200476065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a4d078690df%3A0x776cfe0f7ad0a8af!2z0YPQuy4g0JDRgNCx0LDRgiwgMdCwLCDQnNC-0YHQutCy0LAsIDExOTAxOQ!5e0!3m2!1sru!2sru!4v1653585505481!5m2!1sru!2sru"
+      width="100%"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <footer>
+      <span class="footer_span"
+        >2022 Wendy. Дизайн сайта создан на Wix.com</span
+      >
+    </footer>
+  </body>
+</html>
